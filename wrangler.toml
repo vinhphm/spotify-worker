@@ -4,10 +4,9 @@ compatibility_date = "2023-08-29"
 usage_model = "bundled"
 env = { }
 
-[route]
-pattern = "worker.vinh.dev/spotify*"
-zone_name = ""
-script = "spotify"
+routes = [
+  { pattern = "worker.vinh.dev/spotify*", zone_name = "vinh.dev" }
+]
 
 [triggers]
 crons = [ ]
