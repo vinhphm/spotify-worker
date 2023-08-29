@@ -1,0 +1,13 @@
+name = "spotify"
+main = "src/index.ts"
+compatibility_date = "2023-08-29"
+usage_model = "bundled"
+env = { }
+
+[route]
+pattern = "worker.vinh.dev/spotify*"
+zone_name = ""
+script = "spotify"
+
+[triggers]
+crons = [ ]
