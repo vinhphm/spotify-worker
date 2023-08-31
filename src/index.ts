@@ -2,7 +2,9 @@ import { getNowPlaying } from './spotify';
 
 const handler: ExportedHandler = {
 	async fetch(request, env: any, ctx) {
-		const allowOrigins = env.ALLOW_ORIGINS.split(',');
+		const allowOrigins = env.ALLOW_ORIGINS
+			.split(',')
+			.map((origin: string) => origin.replace(/'/g, ''));
 
 		const response = await getNowPlaying(env);
 
