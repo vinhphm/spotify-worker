@@ -1,4 +1,4 @@
-import { getNowPlaying } from './spotify';
+import { getNowPlaying } from './spotify'
 
 const handler: ExportedHandler = {
 	async fetch(request, env: any, ctx) {
