@@ -8,8 +8,11 @@ routes = [
   { pattern = "worker.vinh.dev/spotify*", zone_name = "vinh.dev" }
 ]
 
+[placement]
+mode = "smart"
+
 [vars]
-ALLOW_ORIGINS = "'https://vinh.dev','https://spotify.vinh-dev.pages.dev','http://localhost:3333'"
+ALLOW_ORIGINS = "'https://vinh.dev','https://spotify.vinh-dev.pages.dev','http://localhost:4321'"
 
 [triggers]
 crons = [ ]
